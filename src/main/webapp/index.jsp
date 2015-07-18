@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=x-windows-874">
         <title>World Cup 2018</title>
         <link rel="shortcut icon" type="image/jpg" href="img/world-cup-russia_1400661248.jpg" />
-  
+
         <link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap/dist/css/bootstrap.min.css" />
         <script src="<%=request.getContextPath()%>/bootstrap/dist/js/jquery.min.js"></script>
         <script src="<%=request.getContextPath()%>/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@
 
         <div class="container">
 
-            <nav class="navbar navbar-default navbar-fixed-top"  >
+            <nav class="navbar navbar-default navbar-fixed-top" style="background: rgba(255,255,255,0.92)" >
                 <div class="container-fluid">                
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">World Cup 2018</a>
@@ -56,17 +56,23 @@
 
         <br /><br /><br />
 
+        
+        
+         
+        
+        
+        
         <div class="container" >
             <div id="news" class="carousel slide" data-ride="carousel" >
                 <ol class="carousel-indicators">
-                    <li data-traget="#news" data-slide-to="0" class="active"></li>
-                    <li data-traget="#news" data-slide-to="1"></li>
-                    <li data-traget="#news" data-slide-to="2"></li>
-                    <li data-traget="#news" data-slide-to="3"></li>
-                    <li data-traget="#news" data-slide-to="4"></li>
-                    <li data-traget="#news" data-slide-to="5"></li>
-                    <li data-traget="#news" data-slide-to="6"></li>
-                    <li data-traget="#news" data-slide-to="7"></li>
+                    <li data-target="#news" data-slide-to="0" class="active"></li>
+                    <li data-target="#news" data-slide-to="1"></li>
+                    <li data-target="#news" data-slide-to="2"></li>
+                    <li data-target="#news" data-slide-to="3"></li>
+                    <li data-target="#news" data-slide-to="4"></li>
+                    <li data-target="#news" data-slide-to="5"></li>
+                    <li data-target="#news" data-slide-to="6"></li>
+                    <li data-target="#news" data-slide-to="7"></li>
 
                 </ol>
 
@@ -95,27 +101,31 @@
                     <div class="item" >
                         <img src="img/2664273_big-lnd.jpg" style="height: 600px" />
                     </div>
-
-                    <a class="left carousel-control" href="#news" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-
-                    </a>
-                    <a class="right carousel-control" href="#news" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>  
                 </div>
+
+                <a class="left carousel-control" href="#news" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+
+                </a>
+                <a class="right carousel-control" href="#news" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>  
             </div>
         </div>
 
+
+
+
         <br />
+
 
         <div class="container" >
             <div class="row">
                 <div class="col col-lg-3" >
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
-                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px">World Cup dream begins for Preliminary Draw volunteers</div>
+                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">World Cup dream begins for Preliminary Draw volunteers</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
                             <img src="img/2665400_full-lnd.jpg" style="width: 100%"/>     
                             <br /><br />
@@ -125,7 +135,7 @@
                 </div>
                 <div class="col col-lg-3">
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
-                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px">Welcome2018.com to inform fans, tourists on Russia 2018 host cities</div>
+                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">Welcome2018.com to inform fans, tourists on Russia 2018 host cities</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
                             <img src="img/2665335_full-lnd.jpg" style="width: 100%"/>    
                             <br /><br />
@@ -135,7 +145,7 @@
                 </div>
                 <div class="col col-lg-3">
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
-                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px">Vodianova: This is a great honour</div>
+                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">Vodianova: This is a great honour</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
                             <img src="img/2664263_full-lnd.jpg" style="width: 100%"/>  
                             <br /><br />
@@ -145,7 +155,7 @@
                 </div>
                 <div class="col col-lg-3">
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
-                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px">Bangladesh on the up under Dutch guidance</div>
+                        <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">Bangladesh on the up under Dutch guidance</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
                             <img src="img/2649576_full-lnd.jpg" style="width: 100%"/>
                             <br /><br />
@@ -154,15 +164,22 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
+
+
+
+
+
+
+
+
+
 
 
         <div id="footer">
             <div class="container">
                 <div class="text-muted credit " align="center"  style="color: white">
-                    Copyright 2015 | Designed By Noppakrit Thanasinrujiphong
+                    &copy; Copyright 2015 | Designed By Noppakrit Thanasinrujiphong
                 </div>
             </div>
         </div>
