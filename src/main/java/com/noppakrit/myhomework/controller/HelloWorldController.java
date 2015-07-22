@@ -13,7 +13,12 @@ public class HelloWorldController {
 	public String todoList(Model model) {
 		model.addAttribute("groupId","com.noppakrit");
 		model.addAttribute("artifactId","myHomework");
-		return "/helloWorld";
+		return "/indexx";
+	}
+        
+        @RequestMapping("/")
+	 String index() {
+		return "/views/index";
 	}
         
 }

@@ -99,8 +99,8 @@
                 <configuration>
                     <port>2234</port>
                     <path>/</path>
-<!--                    <attachClasses>true</attachClasses>
-                    <classesClassifier>web</classesClassifier>-->
+                    <attachClasses>true</attachClasses>
+                    <classesClassifier>web</classesClassifier>
                 </configuration>
             </plugin>
 			
