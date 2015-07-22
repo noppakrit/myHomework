@@ -22,6 +22,9 @@
                 background-image: url("<%=request.getContextPath()%>/img/bg.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
+                width:  110%;
+                height: 110%;
+                  
             }
 
         </style>
