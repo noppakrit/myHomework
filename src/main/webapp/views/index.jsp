@@ -22,9 +22,8 @@
                 background-image: url("<%=request.getContextPath()%>/img/bg.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                width:  110%;
-                height: 110%;
-                  
+                background-size: 100% 100%;
+                    
             }
 
         </style>
@@ -32,17 +31,17 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="container-fluid">
 
             <nav class="navbar navbar-default navbar-fixed-top" style="background: rgba(255,255,255,0.92)" >
                 <div class="container-fluid">                
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">World Cup 2018</a>
+                        <a class="navbar-brand" href="<%=request.getContextPath()%>/">World Cup 2018</a>
                     </div>
 
                     <div>
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="<%=request.getContextPath()%>/">Home</a></li>
                             <li><a href="#">Africa</a></li>
                             <li><a href="#">Asia</a></li> 
                             <li><a href="#">Europe</a></li> 
