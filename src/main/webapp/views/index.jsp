@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=x-windows-874">
-        <title>World Cup 2018</title>
+        <title>World Cup 2018 - Home</title>
         <link rel="shortcut icon" type="image/jpg" href="img/world-cup-russia_1400661248.jpg" />
 
         <link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap/dist/css/bootstrap.min.css" />
@@ -23,7 +23,7 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%;
-                    
+
             }
 
         </style>
@@ -31,19 +31,35 @@
     </head>
     <body>
 
-        <div class="container-fluid">
+        <div class="container hidden-lg">
 
-            <nav class="navbar navbar-default navbar-fixed-top" style="background: rgba(255,255,255,0.92)" >
+            <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width: 100%; ">Home
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" style="width: 100%; background: rgba(255,255,255,0.8)">
+                    <li role="presentation" style="text-align: center"><a role="menuitem" tabindex="-1" href="<%=request.getContextPath()%>/africa">africa</a></li>
+                    <li role="presentation" style="text-align: center"><a role="menuitem" tabindex="-1" href="#">Asia</a></li>
+                    <li role="presentation" style="text-align: center"><a role="menuitem" tabindex="-1" href="#">Europe</a></li>
+                    <li role="presentation" style="text-align: center"><a role="menuitem" tabindex="-1" href="#">North, Central America and Caribbean</a></li>
+                    <li role="presentation" style="text-align: center"><a role="menuitem" tabindex="-1" href="#">South America</a></li> 
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid hidden-sm hidden-xs hidden-md">
+
+            <nav class="navbar navbar-default navbar-fixed-top " style="background: rgba(255,255,255,0.92)" >
                 <div class="container-fluid">                
-                    <div class="navbar-header">
+                    <div class="navbar-header ">
                         <a class="navbar-brand" href="<%=request.getContextPath()%>/">World Cup 2018</a>
                     </div>
 
                     <div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="<%=request.getContextPath()%>/">Home</a></li>
-                            <li><a href="#">Africa</a></li>
-                            <li><a href="#">Asia</a></li> 
+                            <li><a href="<%=request.getContextPath()%>/africa">Africa</a></li>
+                            <li><a href="<%=request.getContextPath()%>/views/Traning.exe">Asia</a></li> 
                             <li><a href="#">Europe</a></li> 
                             <li><a href="#">North, Central America and Caribbean</a></li> 
                             <li><a href="#">Oceania</a></li> 
@@ -56,15 +72,11 @@
         </div>
 
 
+
+
         <br /><br /><br />
 
-        
-        
-         
-        
-        
-        
-        <div class="container" >
+        <div class="container hidden-sm hidden-xs hidden-md" >
             <div id="news" class="carousel slide" data-ride="carousel" >
                 <ol class="carousel-indicators">
                     <li data-target="#news" data-slide-to="0" class="active"></li>
@@ -121,6 +133,12 @@
 
 
         <br />
+
+
+
+
+
+
 
 
         <div class="container" >
