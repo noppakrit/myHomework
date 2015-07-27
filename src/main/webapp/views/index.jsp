@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=x-windows-874">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>World Cup 2018 - Home</title>
         <link rel="shortcut icon" type="image/jpg" href="img/world-cup-russia_1400661248.jpg" />
 
@@ -22,8 +23,8 @@
                 background-image: url("<%=request.getContextPath()%>/img/bg.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-size: 100% 100%;
-
+                background-size: cover;
+                margin-bottom: 100px;
             }
 
         </style>
@@ -32,7 +33,6 @@
     <body>
 
         <div class="container hidden-lg">
-
             <div class="dropdown">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width: 100%; ">Home
                     <span class="caret"></span></button>
@@ -47,14 +47,12 @@
         </div>
 
 
-        <div class="container-fluid hidden-sm hidden-xs hidden-md">
-
-            <nav class="navbar navbar-default navbar-fixed-top " style="background: rgba(255,255,255,0.92)" >
+        <div class="container hidden-sm hidden-xs hidden-md">
+            <nav class="navbar navbar-inverse" style="background: rgba(255,255,255,0.92)" >
                 <div class="container-fluid">                
                     <div class="navbar-header ">
                         <a class="navbar-brand" href="<%=request.getContextPath()%>/">World Cup 2018</a>
                     </div>
-
                     <div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="<%=request.getContextPath()%>/">Home</a></li>
@@ -68,13 +66,7 @@
                     </div>
                 </div>
             </nav>
-
         </div>
-
-
-
-
-        <br /><br /><br />
 
         <div class="container hidden-sm hidden-xs hidden-md" >
             <div id="news" class="carousel slide" data-ride="carousel" >
@@ -92,28 +84,28 @@
 
                 <div class="carousel-inner" role="listbox" align="center">
                     <div class="item active" >
-                        <img src="img/2665400_full-lnd.jpg" style="height: 600px" />                     
+                        <img src="img/2665400_full-lnd.jpg" style="width: 100%" />                     
                     </div>
                     <div class="item" >
-                        <img src="img/2664291_big-lnd.jpg" style="height: 600px; " />
+                        <img src="img/2664291_big-lnd.jpg" style="width: 100%" />
                     </div>
                     <div class="item" >
-                        <img src="img/2664290_big-lnd.jpg" style="height: 600px; "  />
+                        <img src="img/2664290_big-lnd.jpg" style="width: 100%"  />
                     </div>
                     <div class="item" >
-                        <img src="img/2664287_big-lnd.jpg" style="height: 600px" />
+                        <img src="img/2664287_big-lnd.jpg" style="width: 100%" />
                     </div>
                     <div class="item" >
-                        <img src="img/2664286_big-lnd.jpg" style="height: 600px" />
+                        <img src="img/2664286_big-lnd.jpg" style="width: 100%" />
                     </div>
                     <div class="item" >
-                        <img src="img/2664277_big-lnd.jpg" style="height: 600px" />
+                        <img src="img/2664277_big-lnd.jpg" style="width: 100%" />
                     </div>
                     <div class="item" >
-                        <img src="img/2664274_big-lnd.jpg" style="height: 600px" />
+                        <img src="img/2664274_big-lnd.jpg" style="width: 100%" />
                     </div>
                     <div class="item" >
-                        <img src="img/2664273_big-lnd.jpg" style="height: 600px" />
+                        <img src="img/2664273_big-lnd.jpg" style="width: 100%" />
                     </div>
                 </div>
 
@@ -131,19 +123,9 @@
 
 
 
-
-        <br />
-
-
-
-
-
-
-
-
-        <div class="container" >
+        <div class="container" style="padding-top: 20px;">
             <div class="row">
-                <div class="col col-lg-3" >
+                <div class="col col-lg-3 col-md-4 col-sm-6" >
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
                         <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">World Cup dream begins for Preliminary Draw volunteers</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
@@ -153,7 +135,7 @@
                         </div>                
                     </div>
                 </div>
-                <div class="col col-lg-3">
+                <div class="col col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
                         <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">Welcome2018.com to inform fans, tourists on Russia 2018 host cities</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
@@ -163,7 +145,7 @@
                         </div>                
                     </div>
                 </div>
-                <div class="col col-lg-3">
+                <div class="col col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
                         <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">Vodianova: This is a great honour</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
@@ -173,7 +155,7 @@
                         </div>                
                     </div>
                 </div>
-                <div class="col col-lg-3">
+                <div class="col col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default" style="background: rgba(255,255,255,0)">
                         <div class="panel-heading" style="background: rgba(255,255,255,0.9); font-weight: bold;font-size: 20px; color: #a83c3a">Bangladesh on the up under Dutch guidance</div>
                         <div class="panel-body" style="font-weight: bold ;color: black;background: rgba(255,255,255,0.6);" align="center">
@@ -190,16 +172,12 @@
 
 
 
-
-
-
-
-
-
-        <div id="footer">
-            <div class="container">
+        <div id="footer" class="navbar navbar-fixed-bottom" style="z-index: -1" >
+            <div class="container" >                
                 <div class="text-muted credit " align="center"  style="color: white">
+                    <hr />
                     &copy; Copyright 2015 | Designed By Noppakrit Thanasinrujiphong
+                    <hr />
                 </div>
             </div>
         </div>
