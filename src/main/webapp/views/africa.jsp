@@ -4,7 +4,7 @@
     Author     : noppakrit.t
 --%>
 
-<%@page contentType="text/html" pageEncoding="x-windows-874"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.*,com.noppakrit.myhomework.controller.*" %>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap/dist/css/bootstrap.min.css" />
         <script src="<%=request.getContextPath()%>/bootstrap/dist/js/jquery.min.js"></script>
-        <script src="<%=request.getContextPath()%>/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="<%=request.getContextPath()%>/bootstrap/dist/js/boo bvvvvvvvvvvvvvtstrap.min.js"></script>
 
 
         <style>
@@ -71,20 +71,19 @@
         </div>
 
         <div class="container">
-            
-               <%
+
+            <%
                     
-                    String name = null;
-                    String description = null;
-                    List<Zone> list = (List<Zone>)request.getAttribute("data2");
-                    for (int i = 0; i < list.size(); i++) {
-                            Zone z = list.get(i);
-                            zone_id = z.id;
-                            name = z.name;
-                            description = z.description;
-                    } 
-               %>
-            
+                 String name = null;
+                 String description = null;
+                 List<Zone> list = (List<Zone>)request.getAttribute("data2");               
+                 for (int i = 0; i < list.size(); i++) {
+                         Zone z = list.get(i);                          
+                         name = z.name;
+                         description = z.description;
+                 } 
+            %>
+
             <div class="row" >
                 <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">                    
                     <div class="panel" style="background: rgba(255,255,255,0.9)">
@@ -124,66 +123,80 @@
         </div>
 
 
-                <div class="container " style="padding-top: 40px" >
-                    <div class="panel-primary" style="background: rgba(255,255,255,0.5)">
-                        <div class="panel-heading">
-                            Teams
-                        </div>
-        
-                        <div class="panel-body" style="max-height: 490px; overflow-y: scroll;">
-        
-                            <table class="table">
-                                <tr>
-                                    <td style="border: none">
-                                        <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px; " >
-                                            <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
-                                            <text>Algeria</text>
-                                        </div>
-                                    </td>
-                                    <td style="border: none">
-                                        <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px" >
-                                            <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
-                                            <text>Algeria</text>
-                                        </div>
-                                    </td>
-                                    <td style="border: none">
-                                        <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px" >
-                                            <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
-                                            <text>Algeria</text>
-                                        </div>
-                                    </td>
-                                    <td style="border: none">
-                                        <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px" >
-                                            <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
-                                            <text>Algeria</text>
-                                        </div>
-                                    </td>
-                                </tr>
-                                
-                                <%                    
-                                    
-                                    List<Country> countries = (List<Country>)request.getAttribute("data3");
-                                    for (int i = 0; i < countries.size(); i++) {
-                                            Country c       = countries.get(i);
-                                            out.println("<tr>");
-                                            out.println("\t<td style=\"border: none\">");
-                                            out.println("\t\t<div class=\"btn btn-default\" style=\"width: 100%; text-align: left; border: 0px\" >");
+        <div class="container " style="padding-top: 10px" >
+            <div class="panel-primary" style="background: rgba(255,255,255,0.5)">
+                <div class="panel-heading">
+                    <%
+                    List<Country> countries = (List<Country>)request.getAttribute("data3");           
+%>
+                    Teams <% out.print("(" + countries.size() +")"); %>
+                </div>
+
+                <div class="panel-body" style="max-height: 490px; overflow-y: scroll;">
+
+                    <table class="table">
+                        <!--                                <tr>
+                                                            <td style="border: none">
+                                                                <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px; " >
+                                                                    <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
+                                                                    <text>Algeria</text>
+                                                                </div>
+                                                            </td>
+                                                            <td style="border: none">
+                                                                <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px" >
+                                                                    <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
+                                                                    <text>Algeria</text>
+                                                                </div>
+                                                            </td>
+                                                            <td style="border: none">
+                                                                <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px" >
+                                                                    <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
+                                                                    <text>Algeria</text>
+                                                                </div>
+                                                            </td>
+                                                            <td style="border: none">
+                                                                <div class="btn btn-default" style="width: 100%; text-align: left; border: 0px" >
+                                                                    <img src="img/alg.png" style="border: 1px solid gainsboro; width: 35px; margin-right: 15px">
+                                                                    <text>Algeria</text>
+                                                                </div>
+                                                            </td>
+                                                        </tr>-->
+
+
+                        <%     
+                            out.println("<tr>");
+                                                     
+                            for (int i = 0; i < countries.size(); i++) {
+                                    Country c       = countries.get(i);                                    
                                             
-                                            out.println("</tr>");
+                                            
+                                            
+                                    out.println("\t<td style=\"border: none\">");
+                                    out.println("\t\t<a class href=\"#\">");
+                                    out.println("\t\t\t<img src=\"img/" + c.flag_name + "\"style=\"border: 1px solid gainsboro; width: 35px; margin-right: 15px\">");
+                                    out.println("\t\t\t<text>" + c.name + "</text>");
+                                    out.println("\t\t</a>");
+                                    out.println("\t</td>");
+
+
+                                    if((i+1)%3 == 0) {
+                                        out.println("</tr>");
+                                        out.println("<tr>");
+                                    } 
 
                                           
-                                    } 
-                                %>
-                                
-                                
-                                
-                                
-                                
-                                
-                            </table>
-                        </div>
-                    </div>
+                            } 
+                        %>
+
+
+
+
+
+
+                    </table>
                 </div>
+            </div>
+        </div>
 
 
         <div id="footer" class="navbar navbar-fixed-bottom" style="z-index: 100; background-color: gray;" >

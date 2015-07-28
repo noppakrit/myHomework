@@ -25,10 +25,13 @@ public class Country {
     public String name;
     public Integer zone_id;
     public Integer qualified;
+    public String flag_name;
 
     @Override
     public String toString() {
-        return "Country{" + "id=" + id + ", name=" + name + ", zone_id=" + zone_id + ", qualified=" + qualified + '}';
+        return "Country{" + "id=" + id + ", name=" + name + ", zone_id=" + zone_id + ", qualified=" + qualified + ", flag_name=" + flag_name + '}';
     }
+
+    
 
 }
