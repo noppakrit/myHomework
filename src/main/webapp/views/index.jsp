@@ -172,13 +172,9 @@
 
 
 
-        <div id="footer" class="navbar navbar-fixed-bottom" style="z-index: -1" >
-            <div class="container" >                
-                <div class="text-muted credit " align="center"  style="color: white">
-                    <hr />
-                    &copy; Copyright 2015 | Designed By Noppakrit Thanasinrujiphong
-                    <hr />
-                </div>
+        <div id="footer" class="navbar navbar-fixed-bottom" style="z-index: 100; background-color: gray;" >
+            <div class="text-muted credit navbar navbar-fixed-bottom " align="center"  style="color: white">                    
+                &copy; Copyright 2015 | Designed By Noppakrit Thanasinrujiphong
             </div>
         </div>
     </body>

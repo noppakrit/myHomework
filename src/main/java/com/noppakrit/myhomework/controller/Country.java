@@ -19,16 +19,16 @@ package com.noppakrit.myhomework.controller;
  *
  * @author noppakrit.t
  */
-public class Zone {
+public class Country {
+
     public Integer id;
     public String name;
-    public String description;
+    public Integer zone_id;
+    public Integer qualified;
 
     @Override
     public String toString() {
-        return "Zone{" + "id=" + id + ", name=" + name + ", description=" + description + '}';
+        return "Country{" + "id=" + id + ", name=" + name + ", zone_id=" + zone_id + ", qualified=" + qualified + '}';
     }
 
-    
-    
 }
