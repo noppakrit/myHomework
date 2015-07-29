@@ -3,7 +3,11 @@ package com.noppakrit.myhomework.controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -11,6 +15,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -45,7 +50,7 @@ public class HelloWorldController {
         
         
         List<Country> countries;
-        String sql = "select id, name, zone_id, qualified from  country where zone_id=" + list.get(0).id;
+        String sql = "select id, name, zone_id, qualified, flag_name from  country where zone_id=" + list.get(0).id;
         countries = template.query(sql, new CountryRowMapper());
         model.addAttribute("data3",countries);
         
@@ -73,6 +78,31 @@ public class HelloWorldController {
         model.addAttribute("data", list);
         return "list";
     }
+    
+//    @RequestMapping("/hibernate") @ResponseBody
+//	List<Zone> readHibernate() {
+//		Session session = factory.openSession();
+//		List<Zone> result = new ArrayList<Zone>();
+//		SQLQuery query = session.createSQLQuery(
+//			"select id, name, description from zone");
+//		List<Object[]> records = query.list();
+//		for (Object[] record : records)  {
+//			Zone z          = new Zone();
+//			z.id            = (Integer)record[0];
+//			z.name          = (String)record[1];
+//                        z.description      = (String)record[2];
+//			result.add(z);
+//		}
+//		return result;
+//	}
+//
+//	SessionFactory factory = new org.hibernate.cfg.
+//		Configuration().configure().buildSessionFactory();
+    
+    
+    
+    
+    
 }
 
 class ZoneRowMapper implements RowMapper {
@@ -92,6 +122,7 @@ class CountryRowMapper implements RowMapper {
 		c.name          = rs.getString("name");
 		c.zone_id       = rs.getInt("zone_id");
                 c.qualified     = rs.getInt("qualified");
+                c.flag_name     = rs.getString("flag_name");
 		return c;
 	}
 }

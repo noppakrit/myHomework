@@ -124,7 +124,7 @@
 
 
         <div class="container " style="padding-top: 10px" >
-            <div class="panel-primary" style="background: rgba(255,255,255,0.5)">
+            <div class="panel-primary" style="background: rgba(255,255,255,0.9)">
                 <div class="panel-heading">
                     <%
                     List<Country> countries = (List<Country>)request.getAttribute("data3");           
@@ -164,35 +164,28 @@
 
 
                         <%     
-                            out.println("<tr>");
+                            out.println("\t<tr>");
                                                      
                             for (int i = 0; i < countries.size(); i++) {
                                     Country c       = countries.get(i);                                    
-                                            
-                                            
-                                            
-                                    out.println("\t<td style=\"border: none\">");
-                                    out.println("\t\t<a class href=\"#\">");
-                                    out.println("\t\t\t<img src=\"img/" + c.flag_name + "\"style=\"border: 1px solid gainsboro; width: 35px; margin-right: 15px\">");
-                                    out.println("\t\t\t<text>" + c.name + "</text>");
-                                    out.println("\t\t</a>");
-                                    out.println("\t</td>");
+                                    out.println("\t\t\t\t\t<td style=\"border: none\">");
+                                    out.println("\t\t\t\t\t\t<a href=\"#\">");
+                                    out.println("\t\t\t\t\t\t\t<img src=\"img/" + c.flag_name + "\"style=\"border: 1px solid gainsboro; width: 35px; margin-right: 15px\">");
+                                    out.println("\t\t\t\t\t\t\t<text>" + c.name + "</text>");
+                                    out.println("\t\t\t\t\t\t</a>");
+                                    out.println("\t\t\t\t\t</td>");
 
 
-                                    if((i+1)%3 == 0) {
-                                        out.println("</tr>");
-                                        out.println("<tr>");
+                                    if((i+1)%3 == 0 || (i+1) == countries.size() ) {
+                                        out.println("\t\t\t\t</tr>");
+
+                                        if(i + 1 < countries.size()) {
+                                            out.println("\t\t\t\t<tr>");
+                                        }
                                     } 
 
-                                          
                             } 
                         %>
-
-
-
-
-
-
                     </table>
                 </div>
             </div>
