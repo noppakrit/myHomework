@@ -13,6 +13,7 @@
 
 	<context:property-placeholder location="classpath:conf/config.properties" />
 	
+        
 	<context:component-scan base-package="org.siqisource.agave" />
 	<context:component-scan base-package="com.noppakrit.myhomework" />
 
